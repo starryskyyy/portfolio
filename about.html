@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E.V.| About</title>
+    <link rel="icon" href="img/logo.svg">
+    <!-- CSS only -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body class="d-flex flex-column h-100 rounded-bottom">
+<nav class="navbar navbar-expand-lg rounded-top p-0 lead ">
+
+    <div class="container-fluid border-bottom border-secondary  p-0">
+        <a style=" font-size:18px; padding-right:20% !important;"
+           class=" m-0 navbar-brand disabled text-light p-sm-2 pe-md-5">elizaveta-vygovskaia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+            </span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a style=" border-left: 1px solid #152838; border-right: 1px solid #152838;"
+                       class="nav-link text-light p-sm-2 "
+                       aria-current="page" href="index.html">_hello</a>
+                </li>
+                <li class="nav-item">
+                    <a style="border-right: 1px solid #152838; " class=" active nav-link text-light  p-sm-2"
+                       href="about.html">_about-me</a>
+                </li>
+                <li class="nav-item">
+                    <a style="border-right: 1px solid #152838; " class="nav-link text-light  p-sm-2"
+                       href="projects.html">_projects</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a style="border-left: 1px solid #152838;" class="nav-link text-light  p-sm-2"
+                       href="contact.html">_contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="d-flex flex-row bd-highlight  h-100">
+    <div class="bd-highlight" style="border-right: 1px solid #152838; width:4%;">
+        <div class="icons-menu">
+            <input id="btn-personal-info"
+                   onclick="displayPhrase(1); document.getElementById('defaultOpen1').click(); "
+                   class="btn-icon" type="image"
+                   src="img/magic-ball-white.png"/>
+            <input id="btn-professional-info"
+                   onclick="displayPhrase(0); document.getElementById('defaultOpen2').click(); "
+                   class="btn-icon"
+                   type="image"
+                   src="img/cmd.png"/>
+            <input id="btn-hobby-info" onclick="displayPhrase(2); document.getElementById('defaultOpen3').click();"
+                   class="btn-icon" type="image" src="img/gamepad.png"/>
+        </div>
+    </div>
+    <div class="p-0 bd-highlight  " style="border-right: 1px solid #152838; width:20%; height:100%">
+        <div id="personal-info">
+            <section>
+                <div class="accordion-toggle">
+                    <p class="accordion-link accordion-on txt-color">personal-info</p>
+                    <div class="accordion-panel">
+                        <div class="tab">
+                            <div class="submenu">
+                                <div class="menu-logo"><img src="img/about.png"/></div>
+                                <button class="tablinks1 btn-bio" onclick="openContent(event, 'bio')"
+                                        id="defaultOpen1">bio
+                                </button>
+                            </div>
+                            <div class="submenu">
+                                <div class="menu-logo"><img src="img/interests.png"/></div>
+                                <button class="tablinks1 btn-bio" onclick="openContent(event, 'interests')">
+                                    interests
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="accordion-link txt-color">education<span></span></p>
+                    <div class="accordion-panel" style="display:none;">
+                        <div class="tab">
+                            <div class="submenu">
+                                <div class="menu-logo"><img src="img/hat.png"/></div>
+                                <button class="tablinks1 btn-bio" onclick="openContent(event, 'college')">college
+                                </button>
+                            </div>
+                            <div class="submenu">
+                                <div class="menu-logo"><img src="img/hat.png"/></div>
+                                <button class="tablinks1 btn-bio" onclick="openContent(event, 'university')">
+                                    university
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="professional-info">
+            <section>
+                <div class="accordion-toggle">
+                    <p class="accordion-link accordion-on txt-color">professional-info</p>
+                    <div class="accordion-panel">
+                        <div class="tab">
+                            <div class="submenu">
+                                <div class="menu-logo"><img src="img/android-fill.png"/></div>
+                                <button class="tablinks1 btn-bio"
+                                        onclick="openContent(event, 'development')"
+                                        id="defaultOpen2">development
+                                </button>
+                            </div>
+                            <div class="submenu">
+                                <div class="menu-logo"><img src="img/sword-fill.png"/></div>
+                                <button class="tablinks1 btn-bio" onclick="openContent(event, 'skills')">skills
+                                </button>
+                            </div>
+                            <div class="submenu">
+                                <div class="menu-logo"><img src="img/file-fill.png"/></div>
+                                <button class="tablinks1 btn-bio" onclick="openContent(event, 'certificates')">
+                                    certificates
+                                </button>
+                            </div>
+                            <div class="submenu">
+                                <div class="menu-logo"><img src="img/file-text-fill.png"/></div>
+                                <button class="tablinks1 btn-bio" onclick="openContent(event, 'view')">resume
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <div id="hobby-info">
+            <section>
+                <div class="accordion-toggle">
+                    <p class="accordion-link accordion-on txt-color">hobbies</p>
+                    <div class="accordion-panel">
+                        <div class="tab">
+                            <div class="submenu">
+                                <div class="menu-logo"><img src="img/phone-find-fill.png"/></div>
+                                <button class="tablinks1 btn-bio"
+                                        onclick="openContent(event, 'social')"
+                                        id="defaultOpen3">social-media
+                                </button>
+                            </div>
+                            <div class="submenu">
+                                <div class="menu-logo"><img src="img/steam-fill.png"/></div>
+                                <button class="tablinks1 btn-bio" onclick="openContent(event, 'games')">games
+                                </button>
+                            </div>
+                            <div class="submenu">
+                                <div class="menu-logo"><img src="img/mv-fill.png"/></div>
+                                <button class="tablinks1 btn-bio" onclick="openContent(event, 'music')">music
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="bd-highlight" style="border-right: 1px solid #152838; width:45%;">
+        <div class="tab-top">
+            <p class="m-0 txt-color"><span id="demo">personal-info</span></p>
+        </div>
+        <div id="bio" class="tabcontent1 p-5" style="line-height: 1.8; font-size:0.9vw !important;">
+            <p>1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*<br>
+                2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* About me<br>
+                3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<br>
+                4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* I am a current student at George Brown College<br>
+                5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* studying Computer Programming and Analysis.<br>
+                6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<br>
+                7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* As a passionate and motivated professional,<br>
+                8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* I’m constantly striving to improve my techniques,<br>
+                9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* expand my skillset and find new opportunities to grow.<br>
+                10&nbsp;&nbsp;&nbsp;&nbsp;* Each of my projects - both solo and collaborative - have<br>
+                11&nbsp;&nbsp;&nbsp;&nbsp;* provided this growth and allowed me to establish<br>
+                12&nbsp;&nbsp;&nbsp;&nbsp;* myself within this competitive industry.<br>
+                13&nbsp;&nbsp;&nbsp;&nbsp;*<br>
+                14&nbsp;&nbsp;&nbsp;&nbsp;* Please enjoy my portfolio, and feel free to get<br>
+                15&nbsp;&nbsp;&nbsp;&nbsp;* in touch with any questions.<br>
+                16&nbsp;&nbsp;&nbsp;&nbsp;*/</p>
+        </div>
+        <div id="interests" class="tabcontent1  p-5">
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="img/plane-fill.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        travelling
+                    </p>
+                </div>
+            </div>
+
+            <br>
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="img/code.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        coding
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="img/food.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        cooking
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="img/hike.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        hiking
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="img/swimming.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        swimming
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="img/gamepad-fill.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        gaming
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="college" class="tabcontent1  p-5">
+
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="img/government-fill.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        <span style="color:white;">George Brown College</span> / Toronto, ON,
+                        <br><br>
+                        <span style="color:white;">Computer programming and Analysis</span> / Advanced Diploma
+                        <br><br>
+                        <span>2021 - 2023</span>
+
+                    </p>
+                </div>
+            </div>
+            <div style="margin-top:40px;" class="main-content">
+                <div class="content-img">
+                    <img src="img/government-fill.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        <span style="color:white; ">Moscow College of Business Technology</span>
+                        / Moscow
+                        <br><br>
+                        <span style="color:white;">Banking</span> / Diploma
+                        <br><br>
+                        <span>2013 - 2016</span>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="university" class="tabcontent1  p-5">
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="img/medal-fill.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        <span style="color:white; ">Plekhanov Russian University of Economics</span>
+                        / Moscow
+                        <br><br>
+                        <span style="color:white;">Finance</span> / Bachelor Degree
+                        <br><br>
+                        <span>2016 - 2019</span>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="development" class="tabcontent1 p-5">
+            <div class="main-content">
+
+                <div class="content-img">
+                    <img src="img/tools-fill.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0; ">
+                        <span style="color:white;">C#</span><br>
+                    </p>
+                </div>
+                <span><br><span
+                        class="f-c">> 1 year</span><br>I've worked on various solo and group projects.<br>Developed console and GUI applications using Object Oriented Programming.</span>
+            </div>
+            <br>
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="img/tools-fill.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0; ">
+                        <span style="color:white;">Java</span><br>
+                    </p>
+                </div>
+                <span><br><span class="f-c">> 1 year</span><br>I've developed various applications and learned Data Structures and Algorithms based on Java. Tested how efficient different algorithms by giving it a different amount of data to process which helped me to optimize my applications. </span>
+            </div>
+            <br>
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="img/tools-fill.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0; ">
+                        <span style="color:white;">Databases</span><br>
+                    </p>
+                </div>
+                <span><br><span
+                        class="f-c">> 1 year</span><br>My stack for backend is SQL and Oracle databases. <br> <br> So far my team and I created a web application using ASP.NET C# Framework and I connected entire project to a SQL database, seeded data and allowed full integration with it. <br>I also connected sqlite to my library project in Python. </span>
+            </div>
+            <br>
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="img/tools-fill.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0; ">
+                        <span style="color:white;">Hackathons</span><br>
+                    </p>
+                </div>
+                <span><br><span class="f-c"> < 1 year</span><br>Participated in a different hackathons and collaborated with people around the world on a different projects. Most of the projects were built using HTML/CSS/JS.<br><br>
+Also my team and I were a Winners of Sustainability Watson Grand Prize - TuffyHacks 2022  </span>
+            </div>
+            <br>
+        </div>
+        <div id="skills" class="tabcontent1 p-5">
+            <span>// expert </span><br><br>
+            <div class="skill-showcase">
+                <div class="content-img">
+                    <img src="img/c-sharp.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        C#
+                    </p>
+                </div>
+            </div>
+            <div class="skill-showcase">
+                <div class="content-img">
+                    <img src="img/java.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        Java
+                    </p>
+                </div>
+            </div>
+            <div class="skill-showcase">
+                <div class="content-img">
+                    <img src="img/database.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        SQL
+                    </p>
+                </div>
+            </div>
+
+            <div class="skill-showcase">
+                <div class="content-img">
+                    <img src="img/html5-fill.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        HTML
+                    </p>
+                </div>
+            </div>
+            <div class="skill-showcase">
+                <div class="content-img">
+                    <img src="img/css3-fill.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        CSS
+                    </p>
+                </div>
+            </div>
+            <br>
+            <span>// proficient </span><br><br>
+            <div class="skill-showcase">
+                <div class="content-img">
+                    <img src="img/python.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        Python
+                    </p>
+                </div>
+            </div>
+            <div class="skill-showcase">
+                <div class="content-img">
+                    <img src="img/javascript.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        JavaScript
+                    </p>
+                </div>
+            </div>
+            <br>
+            <span>// familiar </span><br><br>
+            <div class="skill-showcase">
+                <div class="content-img">
+                    <img src="img/cpp.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        C++
+                    </p>
+                </div>
+            </div>
+            <div class="skill-showcase">
+                <div class="content-img">
+                    <img src="img/reactjs.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        React / NodeJS
+                    </p>
+                </div>
+            </div>
+            <div class="skill-showcase">
+                <div class="content-img">
+                    <img src="img/dot-net.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        ASP.NET C#
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="certificates" class="tabcontent1 p-5">
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="img/file-list-3-fill.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        <a class="steam-link" href="src/python.pdf" target="_blank">python</a>
+                        <span> // kaggle</span>
+                    </p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div id="view" class="tabcontent1 p-5">
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="img/file-search-fill.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        <a class="steam-link" href="src/Resume.pdf" target="_blank">view</a>
+                        <span> // open in a new tab</span>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="img/file-download-fill.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        <a class="steam-link" href="src/Resume.pdf" download="">download</a>
+                        <span> // auto download</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="social" class="tabcontent1 p-5">
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="img/linkedin-box-fill.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        <a class="steam-link" href="https://www.linkedin.com/in/elizavetav/"
+                           target="_blank">linkedin</a>
+                        <span> // Elizaveta Vygovskaia</span>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="img/instagram-fill.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        <a class="steam-link" href="https://www.instagram.com/vy_elizabeth/"
+                           target="_blank">instagram</a>
+                        <span> // vy_elizabeth</span>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="img/vk.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        <a class="steam-link" href="https://vk.com/vy_elizabeth" target="_blank">vkontakte</a>
+                        <span> // Elizaveta Vygovskaia</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="games" class="tabcontent1 p-5">
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="img/steam-fill2.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        <a class="steam-link" href="https://steamcommunity.com/id/starryskyyyy" target="_blank">starry
+                            sky</a> <span>// steam - Dota 2, CS:GO, etc.</span>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="img/ubisoft.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        <span style="color:white;">starryyskyyy</span> <span>// ubisoft</span>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="img/riot.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        <span style="color:white;">starryyyskyy #4494</span>
+                        <span>// riot games - valorant</span>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="main-content">
+                <div class="content-img">
+                    <img src="img/discord-fill.png" alt="img"/>
+                </div>
+                <div style="display:inline-block;">
+                    <p style="margin:0;">
+                        <span style="color:white;">starry sky #6969</span> <span>// discrod</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div id="music" class="tabcontent1 p-5">
+            <p>// one of my favorites </p>
+            <br>
+            <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcHDjLAd2Z5X?utm_source=generator"
+                    width="100%" height="500" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+    </div>
+    <div class="bd-highlight" style="width:35%; height:50%">
+        <div class="tab-top">
+            <p class="m-0 txt-color">code showcase</p>
+        </div>
+        <div style="height:auto; padding: 50px 30px 0 30px;">
+            <section class="flex">
+                <div>
+                    <img src="img/my-img-mini.png">
+                </div>
+                <div class="ms-3">
+                    <span style="font-size:17px;" class="f-p"><strong>@starryskyyy</strong></span>
+                    <br>
+                    <span style="font-size:14px;">binary-search-java</span>
+                </div>
+            </section>
+        </div>
+        <div class="box-snippet m-4 p-3">
+            <div style=";line-height: 1.4; font-size:0.9vw !important;">
+                <span class="f-pi">public void</span><span> <span class="f-p">binarySearch</span>(<span
+                    class="f-pi">int</span> key, <span class="f-pi">int</span><span class="f-o">[]</span> ary, <span
+                    class="f-pi">int</span> arrayLength) {</span>
+                <span class="code">&nbsp;&nbsp;&nbsp;<span class="f-pi">int</span> lo, hi, mid;</span>
+                <span class="code">&nbsp;&nbsp;&nbsp;lo = <span class="f-do">0</span>;</span>
+                <span class="code">&nbsp;&nbsp;&nbsp;hi = arrayLength<span class="f-c"> -</span><span
+                        class="f-do"> 1</span>;</span>
+                <br>
+                <span class="code">&nbsp;&nbsp;&nbsp;<span class="f-pi">while</span> (lo <span class="f-c"><=</span> hi) {</span>
+                <span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mid = (lo <span class="f-c">+</span> hi) <span
+                        class="f-c">/</span> <span class="f-do">2</span>; <span
+                        class="f-dg">// find a midpoint</span></span>
+                <br>
+                <span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="f-pi">if</span> (ary<span
+                        class="f-o">[</span>mid<span
+                        class="f-o">]</span> <span class="f-c">==</span> key) <span class="f-dg">//if we key was on the midpoint</span></span>
+                <span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                        class="f-pi">return</span> mid;</span>
+                <span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="f-dg">// if key greater than midpoint set a new midpoint</span></span>
+                <span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="f-pi">if</span> (ary<span
+                        class="f-o">[</span>mid<span
+                        class="f-o">]</span> <span class="f-c"><</span> key) </span>
+                <span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hi = mid <span
+                        class="f-c">-</span> <span class="f-do">1</span>;</span>
+                <span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="f-dg">// if key less than midpoint set a new midpoint</span></span>
+                <span class="code f-pi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else</span>
+                <span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lo = mid <span
+                        class="f-c">+</span> <span class="f-do">1</span>;</span>
+                <span class="code">&nbsp;&nbsp;&nbsp;}</span>
+                <span class="code">&nbsp;&nbsp;&nbsp;<span class="f-pi">return</span> -1;</span>
+                <span class="code">}</span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<footer class="footer mt-auto bg-primary border-top border-secondary rounded-bottom">
+    <ul class="nav-list-footer">
+        <li class="nav-item-f"><a style="border-right: 1px solid #152838; " class="disabled-link ">find me in:</a>
+        </li>
+        <li class="nav-item-f"><a style="vertical-align:middle; border-right: 1px solid #152838;"
+                                  href="https://www.linkedin.com/in/elizavetav/"
+                                  target="_blank"><img style="vertical-align:middle" class="center"
+                                                       src="img/in.png"></a></li>
+        <li class="nav-item-f"><a style="vertical-align:middle; border-right: 1px solid #152838;"
+                                  href="https://www.instagram.com/vy_elizabeth/"
+                                  target="_blank"><img style="vertical-align:middle" class="center"
+                                                       src="img/inst.png"></a></li>
+        <li class="nav-item-f"><a style="vertical-align:middle; border-left: 1px solid #152838;"
+                                  href="https://github.com/starryskyyy"
+                                  target="_blank">@starryskyyy <img style="vertical-align:middle" class="center"
+                                                                    src="img/git.png"></a></li>
+    </ul>
+</footer>
+<script src="https://kit.fontawesome.com/6c0e45d675.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

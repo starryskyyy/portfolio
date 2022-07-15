@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E.V.| Contact</title>
+  <link rel="icon" href="img/logo.svg">
+  <!-- CSS only -->
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="d-flex flex-column h-100 rounded-bottom">
+<nav class="navbar navbar-expand-lg rounded-top p-0 lead ">
+
+  <div class="container-fluid border-bottom border-secondary  p-0">
+    <a style=" font-size:18px; padding-right:20% !important;"
+       class=" m-0 navbar-brand disabled text-light p-sm-2 pe-md-5">elizaveta-vygovskaia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+            </span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <li class="nav-item">
+          <a style=" border-left: 1px solid #152838; border-right: 1px solid #152838;"
+             class="nav-link text-light p-sm-2 "
+             aria-current="page" href="index.html">_hello</a>
+        </li>
+        <li class="nav-item">
+          <a style="border-right: 1px solid #152838; " class=" nav-link text-light  p-sm-2"
+             href="about.html">_about-me</a>
+        </li>
+        <li class="nav-item">
+          <a style="border-right: 1px solid #152838; " class=" nav-link text-light  p-sm-2"
+             href="projects.html">_projects</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a style="border-left: 1px solid #152838;" class="active nav-link text-light  p-sm-2"
+             href="contact.html">_contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="d-flex flex-row bd-highlight h-100">
+
+  <div class="bd-highlight" style="border-right: 1px solid #152838; width:18%;">
+    <div class="tab-top">
+      <p class="m-0 txt-color">contact-info</p>
+    </div>
+    <div class="tab">
+      <div class="submenu-contact">
+        <div class="menu-logo"><img src="img/mail-fill.png"/></div>
+        <p class="ms-3" style="color:#959fb1;">vygovskaia.e@gmail.com</p>
+      </div>
+      <div class="submenu-contact">
+        <div class="menu-logo"><img src="img/phone-fill.png"/></div>
+        <p class="ms-3" style="color:#959fb1">+19052269525</p>
+      </div>
+    </div>
+  </div>
+  <div class="bd-highlight" style="border-right: 1px solid #152838; width:55%; height:100%">
+    <div class="tab-top">
+      <p class="m-0 txt-color">contact-form</p>
+    </div>
+    <div class="form-contact" style="line-height: 1.8; margin:10%">
+      <form id="contact-form" name="contact-form" action="php/mail.php" method="POST">
+        <label for="name">_name</label>
+        <input type="text" name="username" id="name" required>
+        <br>
+        <label for="email_id">_email</label>
+        <input type="email" id="email_id" name="email" required>
+        <br>
+        <label for="message">_message</label>
+
+        <textarea name="message"
+                  rows="5" cols="20" id="message"></textarea>
+        <br>
+        <button id="btn-submit" type="submit" class="btn btn-primary" onclick="validateForm();">submit-message</button>
+      </form>
+    </div>
+  </div>
+  <div class="bd-highlight" style="width:38%; height:100%">
+    <div class="tab-top">
+      <p class="m-0 txt-color">contact-code</p>
+    </div>
+    <div class =" contact" style="height:auto; padding: 50px 0 0 30px;">
+      <span>1&nbsp;&nbsp;</span><span class="f-pi">const </span><span class="f-p">message</span><span
+            class="f-pi"> = </span><span>{</span>
+      <br>
+      <span>2&nbsp;&nbsp;</span>&nbsp;<span class="f-p">name</span><span>:</span> <span class="f-o">"<span
+            class="name-code"></span>"</span>
+      <br>
+      <span>3&nbsp;&nbsp;</span>&nbsp;<span class="f-p">email</span><span>:</span> <span class="f-o">"<span
+            class="email-code"></span>"</span>
+      <br>
+      <span>4&nbsp;&nbsp;</span>&nbsp;<span class="f-p">message</span><span>:</span> <span class="f-o">"<span
+            class="message-code" style="width:60%"></span>"</span>
+      <br>
+      <span>5&nbsp;&nbsp;</span>&nbsp;<span>date:</span><span class="f-o">"<span
+            class="date"></span>"</span>
+      <br>
+      <span>6&nbsp;&nbsp;}</span>
+    </div>
+  </div>
+</div>
+
+<footer class="footer mt-auto bg-primary border-top border-secondary rounded-bottom">
+  <ul class="nav-list-footer">
+    <li class="nav-item-f"><a style="border-right: 1px solid #152838; " class="disabled-link ">find me in:</a>
+    </li>
+    <li class="nav-item-f"><a style="vertical-align:middle; border-right: 1px solid #152838;"
+                              href="https://www.linkedin.com/in/elizavetav/"
+                              target="_blank"><img style="vertical-align:middle" class="center"
+                                                   src="img/in.png"></a></li>
+    <li class="nav-item-f"><a style="vertical-align:middle; border-right: 1px solid #152838;"
+                              href="https://www.instagram.com/vy_elizabeth/"
+                              target="_blank"><img style="vertical-align:middle" class="center"
+                                                   src="img/inst.png"></a></li>
+    <li class="nav-item-f"><a style="vertical-align:middle; border-left: 1px solid #152838;"
+                              href="https://github.com/starryskyyy"
+                              target="_blank">@starryskyyy <img style="vertical-align:middle" class="center"
+                                                                src="img/git.png"></a></li>
+  </ul>
+</footer>
+<script src="https://kit.fontawesome.com/6c0e45d675.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+<script src="js/contact-form.js"></script>
+</body>
+</html>
