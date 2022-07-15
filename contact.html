@@ -10,6 +10,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
+  <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("M4oQTb691f6Y6eAol");
+    })();
+  </script>
 </head>
 <body class="d-flex flex-column h-100 rounded-bottom">
 <nav class="navbar navbar-expand-lg rounded-top p-0 lead ">
@@ -70,7 +78,7 @@
       <p class="m-0 txt-color">contact-form</p>
     </div>
     <div class="form-contact" style="line-height: 1.8; margin:10%">
-      <form id="contact-form" name="contact-form" action="php/mail.php" method="POST">
+      <form id="contact-form" name="contact-form" onsubmit="sendMail();">
         <label for="name">_name</label>
         <input type="text" name="username" id="name" required>
         <br>
